@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.backgrnd{
+    background-image: url(imgs/backgrngnet.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 1%;
+    left: 10%;
+    right: 10%;
+}
+
+.head .logo {
+    color: #e50914;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.header .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+.buttons .lan {
+    color: white;
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid white;
+    font-size: 1em;
+    font-weight: 550;
+    padding: 4px;
+    background-color: transparent;
+    
+}
+.buttons .lan option{
+    background-color: black;
+}
+
+.buttons .user {
+    color: white;
+    background-color: hsl(357, 92%, 47%);
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    font-size: 1.1em;
+    font-weight: 550;
+    cursor: pointer;
+}
+.buttons .user:hover{
+    opacity: 0.8;
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+.center .h2{
+    font-size: 35px;
+    font-weight: 800;
+}
+.center .p{
+    margin-top: 4%;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+.info{
+    margin-top: 2%;
+}
+.info .email{
+    width: 300px;
+    height: 50px;
+    margin-right: 3%;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid whitesmoke;
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    position: relative;
+}
+.info .email input {
+    width: 100%;
+    height: 100%;
+    padding: 0 5px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-size: 1em;
+}
+
+.info .email label {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-45%);
+    font-size: 1em;
+    color: whitesmoke;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.info .email input:focus ~ label,
+.info .email input:valid ~ label {
+    top: -5px;
+    font-size: 0.8em;
+    color: #ccc; 
+}
+.info .user{
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: hsl(357, 92%, 47%);
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    font-size: 1.1em;
+    font-weight: 550;
+    cursor: pointer;
+}
+.info .user:hover{
+    opacity: 0.8;
+}
+.break{
+    width: 100%;
+    height: 5px;
+    background-color: hsl(0, 2%, 37%);
+}
+.movies{
+    color: white;
+    background-color: black;
+}
+.header2{
+    display: flex;
+    flex-direction: row;
+   gap: 10%;
+   padding: 10% 10% 3% 10%;
+}
+.header2 .h1{
+    margin-top: 10%;
+    font-size: 50px;
+    font-weight: 800;
+}
+.header2 .p2{
+    margin-top:4%;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing:0.01em;
+
+}
+.header2 img{
+    width:100%;
+    height: 100%;
+}
+.ques{
+    text-align: center;
+    padding: 10% 10% 3% 10%;
+}
+.ques h3{
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 3%;
+}
+.ques .quest{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.ques .quest .que{
+    text-align: center;
+    width: 90%;
+    height: 90px;
+    border: none;
+    padding: 15px;
+    display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   margin-bottom:10px;
+   font-size: 23px;
+   background-color:hsl(0, 0%, 15%);
+   border-radius: 5px;
+}
+.ques .quest .que:hover{
+    background-color:hsl(0, 0%, 20%);
+}
+.answer {
+    display: none;
+  }
+.header2 .foot{
+    display: flex;
+    flex-direction:row;
+}
+.header2 .foot .f1{
+    display: flex;
+    flex-direction: column;
+    opacity: 0.6;
+    margin:0 40px 0 40px;
+}
+.header2 .foot .f1 a,.header2 .foot .f1 .buttons,.header2 .foot .f1 p{
+    padding: 10px;
+    color: white;
+}
+.answer {
+    display: none;
+  }
